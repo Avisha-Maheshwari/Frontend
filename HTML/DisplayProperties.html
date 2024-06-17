@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            color: aliceblue;
+            /* display: inline-block; */
+            margin: 5px;
+            /* display: flex; */
+        }
+        .container{
+            display: flex;
+            /* justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: yellow;
+            flex-wrap:wrap ; */
+            flex-direction: column-reverse;
+            background-color: yellow;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <!-- <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div>
+    <div class="box">"This is Box.</div> -->
+</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: royalblue;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .c1{
+            background-color: green;
+            height: 90%;
+            width: 10%;
+            margin-left: 20px;   
+        }
+        .c2{
+            display: flex;
+            align-items: center;
+            justify-content:start;
+            width: 90%;
+            height: 60%;
+            flex-direction: column;
+            box-sizing: border-box;
+            
+            /* background-color: yellow; */
+        }
+        .c2box1{
+            height: 20%;
+            width: 60%;
+            background-color: green;
+        }
+        .c2box2{
+            height: 20%;
+            width: 40%;
+            margin: 10%;
+        }
+        .box1{
+            height: 30%;
+            width: 25%;
+            background-color:palevioletred;
+        }
+        .box2{
+            height: 30%;
+            width: 25%;
+            background-color: red;
+        }
+        .c2box3{
+            height: 20%;
+            width: 40%;
+            margin: 10%;
+        }
+        .c3{
+            display: flex;
+            align-items: right;
+            justify-content:start;
+            width: 90%;
+            height: 10%;
+            flex-direction: column;
+            box-sizing: border-box;
+            
+            /* background-color: yellow; */
+        }
+        .c3box1{
+            height: 60%;
+            width: 10%;
+            margin: 10%;
+            background-color: yellow;
+        }
+        /* .c2box{
+            display: flex;
+
+        }
+        .c3{
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+            width: 60%;
+            height: 60%;
+            margin-block: 10px;
+            flex-wrap: wrap;
+            flex-direction:row-reverse;
+
+            /* background-color: yellow; */
+         
+        /* .c2box:nth-child(1){
+            background-color: yellow;
+            height: 20%;
+            width: 30%;
+        }
+        .c2box:nth-child(2){
+            background-color: red;
+            height: 20%;
+            width: 30%;
+        }
+        .c2box:nth-child(3){
+            background-color: yellow;
+            height: 20%;
+            width: 30%;
+        }
+        .c2box:nth-child(4){
+            background-color: red;
+            height: 20%;
+            width: 30%;
+        } */
+
+        /* .c2box:nth-child(1){
+            background-color: red;
+            height: 20%;
+            width: 20%;
+
+        } */
+        /* .box2{ */ */
+            /* background-color: yellow;
+            height:20%;
+            width: 60%; */
+            /* display: flex;
+            justify-content: center;
+            align-items: start; */
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+       <div class="c1">
+          <div class="c1box"></div>
+       </div>
+
+       <div class="c2">
+          <div class="c2box1"></div>
+          <div class="c2box2"
+              <div class="box1"></div>
+              <div class="box2"></div>
+          </div>
+          <div class="c2box3">
+            <div class="box1"></div>
+            <div class="box2"></div>
+          </div>
+       <div class="c3">
+            <div class="c3box1"></div>
+            <div class="c3box2"></div>
+       </div>
+             
+    </div>
+    
+</body>
+</html>
