@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram_Clone</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: black;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            height: 100vh;
+            justify-content: flex-start;
+            margin: auto;
+        }
+        .box1{
+            display: flex;
+            flex-direction: column;
+            height: 10000px;
+            width: 20%;
+            /* background-color: aliceblue; */
+            border-right: 0.3px solid grey;
+            position: fixed;
+            background-color: black;
+        }
+        .m1{
+            color: azure;
+            margin: 8px;
+            font-size: 15px;
+            font-family:'Harlow solid italic';
+            font-style: italic;
+        }
+        .m2,.m3,.m4,.m5,.m6,.m7,.m8,.m9{
+            color: azure;
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 8px;
+            font-family: Georgia;
+            font-style: normal;
+            border-radius: 500px;
+
+        }
+        .m10{
+            color: azure;
+            margin-left: 15px;
+            margin-top: 15px;
+            font-size: 8px;
+            font-family: Georgia;
+            /* font-style: thin; */
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+            height: 10000px;
+            width: 80%;
+            margin-left: 20%;
+            background-color: black;
+            /* background-color: aqua; */
+        }
+        .b1{
+            display: flex;
+            flex-direction: row;
+            /* justify-content: ; */
+            align-items: center;
+            height:100px;
+            width:100% ;
+            /* margin-left: 20.5%; */
+            /* background-color: aqua; */
+        }
+        .b11{
+            /* background-color: green; */
+            margin-left: 40px;
+            height: 70px;
+            width: 17%;
+            border-radius: 600px;
+            /* margin-top: 30px; */
+
+        }
+        .b12{
+            display: flex;
+            flex-direction: column;
+            height: 50px;
+            width: 40%;
+            /* background-color: pink; */
+            margin-left: 30px;
+            margin-top: 3px;
+            
+        }
+        .bx1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* background-color: blue; */
+            height:15px ;
+            width: 100%;
+            font-size: 8px;
+            justify-items: space-between;
+            
+        }
+        .tag{
+            color: azure;
+            /* justify-items: space-evenly; */
+            padding: 4px;
+        }
+        .bx2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* background-color: yellow; */
+            height:15px ;
+            width: 100%;
+            font-size: 8px;
+            justify-items: space-between;
+            margin-top: 2px;
+        }
+        .bx3{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            /* background-color: blue; */
+            height:15px ;
+            width: 100%;
+            font-size: 8px;
+            color: azure;
+            justify-items: space-between;
+            padding: 2px;
+            margin-top: 2px;
+            }
+            .tg{
+                color: azure;
+                margin-left: 18px;
+            }
+
+        .b2{
+            display: flex;
+            flex-direction: row;
+            height:50px;
+            width: 100%;
+            /* background-color:orange ; */
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .i{
+            background-color: brown;
+            height:55%;
+            width: 7%;
+            border-radius: 200px;
+            margin: 15px;
+        }
+        .b3{
+            display: flex;
+            flex-direction: column;
+            height:1000px;
+            width: 100%;
+            /* background-color: yellow; */
+        }
+        img[type="pp"]{
+            border-radius: 800px;
+            margin-top: 6px;
+        }
+        .b31{
+            display: flex;
+            flex-direction: row;
+            height: 20px;
+            width: 100%;
+            /* background-color: blue; */
+            justify-content:center;
+            border-top: 0.5px solid gray;
+            border-width: 80%;
+            /* color: bisque;
+            background-color: blue;
+            font-size: 8px;
+            justify-items:space-around;
+            align-items: space-around;
+            align-content: center; */
+        }
+        .b{
+            color: bisque;
+            font-size: 8px;
+            /* justify-items:space-between;
+            align-items: space-between;*/
+            align-content: center;
+            justify-content: center;
+            /* margin: 2px; */
+            padding-left: 20px;
+        }
+        .b32{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* margin: 1px; */
+            height: 204px;
+            width: 100%;
+            /* background-color: tomato; */
+            justify-content: center;
+            justify-items: space-evenly;
+        }
+        .image{
+            height: 100px;
+            width: 30%;
+            /* background-color: whitesmoke; */
+            margin: 1px;
+            border-radius: 0px;
+            align-content: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="m1">Instagram</div>
+            <div class="m2" id="A">  <img src="Home.png" alt="" width="10%" >   Home   </div>
+            <div class="m3">Search</div>
+            <div class="m4">Explore</div>
+            <div class="m5">Reels</div>
+            <div class="m6">Messages</div>
+            <div class="m7">Notifications</div>
+            <div class="m8">Create</div>
+            <div class="m9">Profile</div>
+            <div class="m10">More</div>
+        </div>
+        <div class="box2">
+            <div class="b1">
+                <div class="b11"><img src="profilePic.jpg" alt="" class="A" type="pp" width="60px" height="60px" border-radius= "800px" margin-top=" 6px"></div>
+                <div class="b12">
+                    <div class="bx1">
+                        <div class="tag">avishaa_m</div>
+                        <div class="tag">Edit Profile</div>
+                        <div class="tag">View Archive</div>
+                    </div>
+                    <div class="bx2">
+                        <div class="tag">6 Posts</div>
+                        <div class="tag">554 Followers</div>
+                        <div class="tag">584 Following</div>
+                    </div>
+                    <div class="bx3">
+                        <div class="tg">Avisha</div>
+                    </div>
+                </div>
+            </div>
+            <div class="b2">
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+            </div>
+            <div class="b3">
+                <div class="b31">
+                    <div class="b">Posts</div>
+                    <div class="b">Reels</div>
+                    <div class="b">Saved</div>
+                    <div class="b">Tags</div>
+                </div>
+                <div class="b32">
+                    <div class="image"><img src="https://images.unsplash.com/photo-1718398138214-20fa84ca95a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D" alt="i1" width="125px" height="100px"> </div>
+                    <div class="image"><img src="https://images.unsplash.com/photo-1718573577441-61fb326c1517?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D" alt="i1" width="125px" height="100px"  ></div>
+                    <div class="image"><img src="https://images.unsplash.com/photo-1655393358928-27e7b26463fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" alt="i3" width="125px" height="100px">  </div>
+                    <div class="image"> <img src="https://images.unsplash.com/photo-1717651900618-66c4873fdee7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D" alt="i4" class="src" width="125px" height="100px"> </div>
+                    <div class="image"> <img src="https://images.unsplash.com/photo-1718584181454-49ac1a2f0047?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="i5" class="src" width="125px" height="100px"></div>
+                    <div class="image"> <img src="https://images.unsplash.com/photo-1718703358030-c2a3f4fac3a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D" alt="i6" class="src" width="125px" height="100px"></div>
+                </div>
+                <!-- <div class="b33">
+                    <div class="he1"></div>
+                    <div class="he2"></div>
+                    <div class="he3"></div>
+                    <div class="he4"></div>
+                    <div class="he5"></div>
+                </div> -->
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
