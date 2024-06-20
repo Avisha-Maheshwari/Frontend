@@ -11,25 +11,267 @@
             padding: 0px;
             box-sizing: border-box;
             color: azure;
-            font-size: 10px;
+            font-size: 8px;
         }
        
         .left{
              background-color: black;
              border-right: 0.5px solid grey;
              width: 20%;
-             padding: 30px;
+             padding: 15px;
+             position: fixed; 
         }
         .menu ul li{
-            margin: 10px 0px;
+            margin: 3px 0px;
             font-size: 20px;
             list-style: none;
         }
+        .profile img{
+
+        width: 15px;
+        border-radius: 50px;
+        height: 15px;
+        margin-left: 0px;
+        }
+
+        .profile-text{
+
+         position: relative;
+         bottom: 6px;
+         left: 2px;
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+            height: 800px;
+            width: 80%;
+            margin-left: 20%;
+            background-color: black;
+            position: relative;
+            /* background-color: aqua; */
+        }
+        .b1{
+            display: flex;
+            flex-direction: row;
+            /* justify-content: ; */
+            align-items: center;
+            height:100px;
+            width:100% ;
+            /* margin-left: 20.5%; */
+            /* background-color: aqua; */
+        }
+        .b11{
+            /* background-color: green; */
+            margin-left: 40px;
+            height: 70px;
+            width: 17%;
+            border-radius: 600px;
+            /* margin-top: 30px; */
+
+        }
+        .b12{
+            display: flex;
+            flex-direction: column;
+            height: 50px;
+            width: 40%;
+            /* background-color: pink; */
+            margin-left: 30px;
+            margin-top: 3px;
+            justify-content: center;
+            position: relative;
+            
+        }
+        .bx1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* background-color: blue; */
+            height:15px ;
+            width: 100%;
+            font-size: 10px;
+            justify-items: space-between;
+            
+        }
+        .tag{
+            color: azure;
+            /* justify-items: space-evenly; */
+            padding: 4px;
+            margin-top: 5px;
+            font-size: 7px;
+            
+        }
+        .bx2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* background-color: yellow; */
+            height:15px ;
+            width: 100%;
+            font-size: 3px;
+            justify-items: space-between;
+            margin-top: 5px;
+            padding: 5px;
+        }
+        .bx3{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            /* background-color: blue; */
+            height:15px ;
+            width: 100%;
+            font-size: 2px;
+            /* color: yellow; */
+            justify-items: space-between;
+            /* padding: 2px;*/
+            margin-left: 19px; 
+            position: relative;
+            }
+        .tg{
+                color: azure;
+                margin-left: 0px;
+                padding: 5px;
+                margin-top: 15px;
+                font-size:7px
+        }
+
+        .b2{
+            display: flex;
+            flex-direction: row;
+            /* height:70px; */
+            width: 100%;
+            margin: 10px;
+            padding-bottom: 8px;
+            padding: 10px;
+            /* background-color:orange ; */
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .i{
+            background-color: brown;
+            height:110%;
+            width: 8%;
+            border-radius: 200px;
+            margin: 15px;
+            
+        }
+        .b3{
+            display: flex;
+            flex-direction: column;
+            height:1000px;
+            width: 100%;
+            margin-top: 5px;
+            /* background-color: yellow; */
+        }
+        img[type="pp"]{
+            border-radius: 800px;
+            margin-top: 6px;
+            margin-top: 16px;
+        }
+        .b31{
+            display: flex;
+            flex-direction: row;
+            height: 20px;
+            width: 100%;
+            /* background-color: blue; */
+            justify-content:center;
+            border-top: 0.5px solid gray;
+            border-width: 80%;
+            /* color: bisque;
+            background-color: blue;
+            font-size: 8px;
+            justify-items:space-around;
+            align-items: space-around;
+            align-content: center; */
+        }
+        .b{
+            color: bisque;
+            font-size: 8px;
+            /* justify-items:space-between;
+            align-items: space-between;*/
+            align-content: center;
+            justify-content: center;
+            /* margin: 2px; */
+            padding-left: 20px;
+        }
+        .b32{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* margin: 1px; */
+            height: 204px;
+            width: 100%;
+            /* background-color: tomato; */
+            justify-content: center;
+            justify-items: space-evenly;
+        }
+        .image{
+            height: 100px;
+            width: 30%;
+            /* background-color: whitesmoke; */
+            margin: 1px;
+            border-radius: 0px;
+            align-content: center;
+        }
+        button{
+            background-color: gray;
+            color: azure;
+            border: none;
+            border-radius: 5px;
+            padding: 3px;
+            font-size: 6px;
+        }
+        .more span{
+
+           margin: 0px 8px;
+           font-size: 5px;
+        }
+        .more{
+
+          margin: 100px 0px;
+          font-size: 20px;
+           }
+        .logo img{
+
+           width: 100px;
+        }
+
+        .mylogo{
+
+        display: none;
+        border-radius:"400px";
+        }
+        @media (max-width:1042px){
+
+       .menu ul li span:nth-child(2){
+
+              display: none;
+        }
+
+       .logo img:nth-child(1){
+
+         display: none;
+        }
+
+        .mylogo{
+
+          display: block;
+        }
+
+        .left{
+
+        width: 10%;
+        min-width: 110px;
+        }
+    }
+
     </style>
 </head>
 <body>
     <div class="left">
-         <div class="logo"><img src="" alt="Insta"></div>
+        <div class="logo">
+        <img src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png" alt="">
+        <img src="https://w7.pngwing.com/pngs/730/864/png-transparent-instagram-logo-computer-icons-insta-logo-text-computer-icons-circle-thumbnail.png" alt="" class="mylogo" style="width: 15px;" ></div>
+        <!--<div classiv="logo"><img src="CSS/logo (2).png" alt="Insta"></div> -->
          <div class="menu">
             <ul>
                 <li>
@@ -37,39 +279,94 @@
                     <span>Home</span>
                 </li>
                 <li>
-                    <span></span>
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
                     <span>Search</span>
                 </li>
                 <li>
-                    <span></span>
+                    <span><i class="fa-regular fa-compass"></i></span>
                     <span>Explore</span>
                 </li>
                 <li>
-                    <span></span>
+                    <span><i class="fa-solid fa-clapperboard"></i></span>
                     <span>Reels</span>
                 </li>
                 <li>
-                     <span></span>
+                     <span><i class="fa-solid fa-comment-dots"></i></span>
                      <span>Messages</span>
                 </li>
                 <li>
-                    <span></span>
+                    <span><i class="fa-regular fa-heart"></i></span>
                     <span>Notifications</span>
                 </li>
                 <li>
-                    <span></span>
+                    <span><i class="fa-regular fa-square-plus"></i></span>
                     <span>Create</span>
                 </li>
                 <li>
-                    <span></span>
-                    <span>profile</span>
+                    <span class="profile">
+                        <img src="https://images.unsplash.com/photo-1718312275779-99010e78b2ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNjd8fHxlbnwwfHx8fHw%3D" alt="">
+                    </span>
+                    <span class="profile-text">Profile</span>
                 </li>
             </ul>
          </div>
-        <div class="more">
-            <span></span>
+         <div class="more">
+            <span class="icon"><i class="fa-solid fa-bars"></i></span>
             <span>More</span>
         </div>
+    </div>
+    <div class="box2">
+        <div class="b1">
+            <div class="b11"><img src="profilePic.jpg" alt="" class="A" type="pp" width="60px" height="60px" border-radius= "800px" margin-top=" 6px"></div>
+            <div class="b12">
+                <div class="bx1">
+                    <div class="tag">avishaa_m</div>
+                    <div class="tag"><button>Edit Profile</button></div>
+                    <div class="tag"><button>View Archive</button></div>
+                </div>
+                <div class="bx2">
+                    <div class="tag">6 Posts</div>
+                    <div class="tag">554 Followers</div>
+                    <div class="tag">584 Following</div>
+                </div>
+                <div class="bx3">
+                    <div class="tg">Avisha❤️</div> <br><br>
+                    <div class="tg">31•7💫</div>
+                </div>
+            </div>
+        </div>
+        <div class="b2">
+            <div class="i"></div>
+            <div class="i"></div>
+            <div class="i"></div>
+            <div class="i"></div>
+            <div class="i"></div>
+            <div class="i"></div>
+        </div>
+        <div class="b3">
+            <div class="b31">
+                <div class="b">Posts</div>
+                <div class="b">Reels</div>
+                <div class="b">Saved</div>
+                <div class="b">Tags</div>
+            </div>
+            <div class="b32">
+                <div class="image"><img src="https://images.unsplash.com/photo-1718398138214-20fa84ca95a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D" alt="i1" width="125px" height="100px"> </div>
+                <div class="image"><img src="https://images.unsplash.com/photo-1718573577441-61fb326c1517?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D" alt="i1" width="125px" height="100px"  ></div>
+                <div class="image"><img src="https://images.unsplash.com/photo-1655393358928-27e7b26463fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" alt="i3" width="125px" height="100px">  </div>
+                <div class="image"> <img src="https://images.unsplash.com/photo-1717651900618-66c4873fdee7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D" alt="i4" class="src" width="125px" height="100px"> </div>
+                <div class="image"> <img src="https://images.unsplash.com/photo-1718584181454-49ac1a2f0047?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="i5" class="src" width="125px" height="100px"></div>
+                <div class="image"> <img src="https://images.unsplash.com/photo-1718703358030-c2a3f4fac3a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D" alt="i6" class="src" width="125px" height="100px"></div>
+            </div>
+            <!-- <div class="b33">
+                <div class="he1"></div>
+                <div class="he2"></div>
+                <div class="he3"></div>
+                <div class="he4"></div>
+                <div class="he5"></div>
+            </div> -->
+        </div>
+        
     </div>
 </body>
 </html>

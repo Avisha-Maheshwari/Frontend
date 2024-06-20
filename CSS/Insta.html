@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Roboto Condensed", sans-serif;
+
+        }
+
+        .left{
+
+            border-right: 2px solid #eee;
+            width: 17%;
+            padding: 30px;
+            
+        }
+
+        .logo img{
+
+          width: 150px;
+        }
+
+        .menu ul li {
+
+            margin: 50px 0px;
+            font-size: 20px;
+            list-style: none;
+        }
+
+        .more{
+
+            margin: 100px 0px;
+            font-size: 20px;
+        }
+
+        .menu ul li span{
+
+            margin: 0px 5px;
+            font-size: 22px;
+
+        }
+
+        .profile img{
+
+          width: 35px;
+          border-radius: 50px;
+        }
+
+        .profile-text{
+
+            position: relative;
+            bottom: 10px;
+        }
+
+        .more span{
+
+            margin: 0px 8px;
+            font-size: 28px;
+        }
+
+        .mylogo{
+
+            display: none;
+        }
+
+
+        @media (max-width:1240px){
+
+            .menu ul li span:nth-child(2){
+
+                display: none;
+            }
+
+            .logo img:nth-child(1){
+
+                display: none;
+            }
+
+            .mylogo{
+
+                display: block;
+            }
+
+            .left{
+
+                width: 10%;
+                min-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="left">
+      <div class="logo">
+        <img src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png" alt="">
+        <img src="https://w7.pngwing.com/pngs/730/864/png-transparent-instagram-logo-computer-icons-insta-logo-text-computer-icons-circle-thumbnail.png" alt="" class="mylogo" style="width: 30px;">
+      </div>
+      <div class="menu">
+         <ul>
+            <li>
+                <span><i class="fa-solid fa-house"></i></span>
+                <span>Home</span>
+            </li>
+            <li>
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span>Search</span>
+            </li>
+            <li>
+                <span><i class="fa-regular fa-compass"></i></span>
+                <span>Explore</span>
+            </li>
+            <li>
+                <span><i class="fa-solid fa-video"></i></span>
+                <span>Reels</span>
+            </li>
+            <li>
+                <span><i class="fa-solid fa-message"></i></span>
+                <span>Messages</span>
+            </li>
+            <li>
+                <span><i class="fa-regular fa-heart"></i></span>
+                <span>Notification</span>
+            </li>
+            <li>
+                <span><i class="fa-solid fa-square-plus"></i></span>
+                <span>Create</span>
+            </li>
+            <li>
+                <span class="profile">
+                    <img src="https://th.bing.com/th/id/OIG4.LgUj9FIjzUbdTSMn0mRg" alt="">
+                </span>
+                <span class="profile-text">Profile</span>
+            </li>
+         </ul>
+      </div>
+      <div class="more">
+        <span class="icon"><i class="fa-solid fa-bars"></i></span>
+        <span>More</span>
+      </div>
+    </div>
+    
+</body>
+</html>
