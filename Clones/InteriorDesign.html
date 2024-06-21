@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior_Design</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Roboto Condensed", sans-serif;
+        }
+        .left{
+            background-color: rgb(241, 9, 9);
+            width: 20%;
+            padding: 20px;
+            color: azure; 
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+        }
+        .heading{
+            margin-top: 100px;
+        }
+        .heading span{
+            font-size: 33px;
+            margin: 20px 0px;
+            font-style: bold;
+        }
+        .menu{
+            margin-top: 100px;
+        }
+         .menu ul li {
+
+            margin: 20px 0px;
+            font-size: 20px;
+            list-style: none;  
+        }
+        .right{
+            /* margin: 100px 10px; */
+            display: flex;
+            flex-direction: column;
+            width:80% ;
+            /* height: 100vh; */
+            /* background-color: yellow; */
+            margin-left: 20%;
+            margin-top: 70px;
+
+        }
+        .H{
+            color: rgb(17, 16, 16);
+            font-size: 40px;
+            margin-top: 80px;
+            margin-left: 40px;
+            font-family: "Poppins", sans-serif;
+            font-weight: bolder 
+        }
+        .show{
+            color: red;
+            font-size: 30px;
+            /* margin-top: 8px; */
+            /* text-align: left; */
+            /* justify-items: flex-start; */
+            margin-left: 40px;
+            font-weight: lighter;
+        }
+        .line{
+            border: 5px solid red;
+            margin-top: 20px;
+            width: 60px;
+            margin-left: 40px;
+            border-radius: 40px;
+
+        }
+        .i1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px;
+            align-items: center;
+            justify-items: space-around;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .i{
+            width: 49%;
+            margin-top: 9px;
+            /* align-items: center;
+            align-content: space-around; */
+        }
+        .i img{
+            width: 100%;
+            height: 100%;
+        }
+        .p{
+            color: black;
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            margin: 40px;
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px; */
+    /* margin-inline-end: 0px;
+    unicode-bidi: isolate; */
+}
+.des{
+    font-style: bold;
+    margin: 40px;
+    margin-top: 2px;
+}
+.imgTxt{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: yellow;
+    margin: 40px;
+    margin-top: 1px;
+    flex-wrap: wrap;
+}
+.DI{
+    
+    background-color: blue;
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+    align-items: center;
+    justify-items: space-around;
+    justify-content: space-between;
+    margin-top: 4px;
+
+} 
+
+.b img{
+    width: 100%;
+    background-color: black;
+}
+.b{
+    width: 30%;
+    font-size: 20px;
+    background-color: gray;
+    margin: 3px;
+    /* padding-top: 8px; */
+}
+.bt{
+    display: flex;
+    flex-wrap: wrap;
+}   
+.designation{
+    color: gray;
+
+}
+/* p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+} */
+.BasicPro{
+    color: black;
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    /* margin-top: 4px; */
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+.Basic{
+    width: 50%;
+}
+
+.Basic th{
+    background-color: rgb(102, 102, 102);
+}
+table, th, td {
+      border: 1px solid black;
+      margin-left: 40px;
+      font-size: 20px;
+      width: 90%;
+      padding: 30px;
+      text-align: center;
+      border-collapse: collapse;
+      background-color: rgb(236, 232, 232);
+      margin: 60px;
+      
+}
+button{
+    padding: 10px;
+    background-color: azure;
+    size: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="left">
+        <div class="heading"><span>Company Name</span></div>
+        <div class="menu">
+            <ul>
+                <li><span>Home</span></li>
+                <li><span>Showcase</span></li>
+                <li><span>Services</span></li>
+                <li><span>Designers</span></li>
+                <li><span>Packages</span></li>
+                <li><span>Contact</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div class="H">
+             <h1 >Interior design</h1>
+        </div>
+        <div class="show">
+             <h1>Showcase.</h1>
+         </div>  
+        <div class="line"></div>
+        <div class="i1">
+            <div class="i"><img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="" class="src"></div>
+            <div class="i"><img src="https://www.w3schools.com/w3images/atrium.jpg" alt="" class="src"></div>
+            <div class="i"><img src="https://www.w3schools.com/w3images/livingroom.jpg" alt="" class="src"></div>
+            <div class="i"><img src="https://www.w3schools.com/w3images/bedroom.jpg" alt="" class="src"></div>
+            <div class="i"><img src="https://www.w3schools.com/w3images/diningroom.jpg" alt="" class="src"></div>
+            <div class="i"><img src="https://www.w3schools.com/w3images/livingroom2.jpg" alt="" class="src"></div>
+        </div>
+        <div class="show"><h1>Services.</h1> </div>
+        <div class="line"></div>
+        <div class="p"><p>We are a interior design service that focus on what's best for your home and what's best for you!<br>
+
+                Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+        <div class="show"><h1>Designers.</h1> </div>
+        <div class="line"></div>
+        <div class="p"><p>The best team in the world.<br>
+
+            We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+
+        <div class="des"><h4>Our designers are thoughtfully chosen:</h4></div>
+        <div class="DI">
+            <div class="b"><img src="https://www.w3schools.com/w3images/team2.jpg" alt="" class="src"></div>
+            <div class="bt">
+                       <h5>John Doe</h5>
+                        <p class="designation">CEO & Founder</p><br>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p></div>
+            <div class="b"><img src="https://www.w3schools.com/w3images/team1.jpg" alt="" class="src"></div>
+            <div class="bt">
+                <h5>Jane Doe</h5>
+                     <p class="designation">Designer</p>
+
+                   <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
+            <div class="b"><img src="https://www.w3schools.com/w3images/team3.jpg" alt="" class="src"></div>
+            <div class="bt">
+                <h5>Mike Ross</h5>
+                <p class="designation">Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
+            
+        </div>
+        <div class="show"><h1>Packages.</h1> </div>
+        <div class="line"></div>
+        <div class="p"><p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p></div>
+        <div class="BasicPro">
+            <div class="Basic">
+                <!-- <ul>
+                    
+                        <li>Floorplanning</li>
+                        <li>10 hours support</li>
+                        <li>Photography</li>
+                        <li>20% furniture discount</li>
+                        <li>Good deals</li>
+                        <li><p><h2>$ 199</h2></p>
+                           <p> per room</p></li>
+                        <button>Sign Up</button>
+                    
+                </ul> -->
+                <table>
+                    <th>Basic</th>
+                    <tr><td>Floorplanning</td></tr>
+                    <tr><td>10 hours support</td></tr>
+                    <tr><td>Photography</td></tr>
+                    <tr><td>20% furniture discount</td></tr>
+                    <tr><td>Good deals</td></tr>
+                    <tr><td>
+                        <h2>$ 199</h2>
+                        per room
+                    </td></tr>
+                    <tr><td><button>Sign Up</button></td></tr>
+                    
+                </table>
+            </div>
+
+           
+                <div class="Basic">
+                   
+                    <table>
+                        <th>Pro</th>
+                        <tr><td>Floorplanning</td></tr>
+                        <tr><td>50 hours support</td></tr>
+                        <tr><td>Photography</td></tr>
+                        <tr><td>50% furniture discount</td></tr>
+                        <tr><td>GREAT deals</td></tr>
+                        <tr><td>
+                            <h2>$ 249</h2>
+                            per room
+                        </td></tr>
+                        <tr><td><button>Sign Up</button></td></tr>
+                        
+                    </table>
+                </div>
+
+
+        </div>
+</div>
+</body>
+</html>
