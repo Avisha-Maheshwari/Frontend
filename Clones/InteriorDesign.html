@@ -98,17 +98,19 @@
             font-family: "Poppins", sans-serif;
             font-size: 16px;
             margin: 40px;
-    display: block;
+            display: block;
     /* margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px; */
     /* margin-inline-end: 0px;
     unicode-bidi: isolate; */
-}
+        }
 .des{
     font-style: bold;
     margin: 40px;
-    margin-top: 2px;
+    /* margin-top: 2px; */
+            margin-top: 50px;
+        
 }
 .imgTxt{
     display: flex;
@@ -118,7 +120,7 @@
     margin-top: 1px;
     flex-wrap: wrap;
 }
-.DI{
+/* .DI{
     
     background-color: blue;
     width:90%;
@@ -131,9 +133,34 @@
     justify-content: space-between;
     margin-top: 4px;
 
-} 
-
-.b img{
+}  */
+.DI{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            margin: 40px;
+            flex-wrap: wrap;
+        }
+        .b{
+            margin-top: 20px;
+            background-color: rgb(155, 149, 149);
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .b img{
+            width: 100%;
+            height: 100%;
+        }
+        .bt{
+            padding: 15px;
+        }
+        .designation{
+            color: rgb(159, 155, 155);
+        }
+/* .b img{
     width: 100%;
     background-color: black;
 }
@@ -143,7 +170,7 @@
     background-color: gray;
     margin: 3px;
     /* padding-top: 8px; */
-}
+/* }
 .bt{
     display: flex;
     flex-wrap: wrap;
@@ -151,7 +178,7 @@
 .designation{
     color: gray;
 
-}
+} */ 
 /* p {
     display: block;
     margin-block-start: 1em;
@@ -173,7 +200,7 @@
     justify-content: space-between;
     
 }
-.Basic{
+.Basic,.pro{
     width: 50%;
 }
 
@@ -193,11 +220,84 @@ table, th, td {
       
 }
 button{
-    padding: 10px;
+    /* padding: 10px; */
     background-color: azure;
-    size: 40px;
+    size: 70px;
+    font-size: 15px;
+    border: none;
+    padding: 15px 20px; 
+    display: inline;
+    margin: 15px 0px !important;
 }
 
+.pro button{
+            background-color: red;
+            color: azure;
+        }
+        
+        .para{
+            font-size: 18px;
+        }
+
+        .form{
+            margin-top: 15px;
+        }
+        .form input{
+            width: 100%;
+            padding: 10px 20px;
+            border: 1px rgb(176, 175, 175) solid;
+        }
+        .pro th{
+            background-color: red;
+        }
+        .Button{
+            font-size: 15px;
+            background-color: red;
+            color: rgb(241, 237, 237);
+            padding: 15px !important;
+        }
+        .space{
+            margin-top: 50px !important;
+            color:black;
+            text-align: right;
+            align-items: center;
+            /* text-align: center; */
+            height: 130px;
+            padding: 60px;
+            background-color: rgb(230, 225, 225);
+            
+        }
+        .contact{
+            margin-top: 50px ;
+            margin-left: 40px;
+            justify-content: center;
+        }
+        
+        /* .left1{
+            color: white;
+            background-color: red;
+            display:none;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            padding: 20px;
+            font-size: 24px;
+            position: fixed;
+        } */
+        .name1{
+            margin-left: 50px;
+        }
+        @media(max-width:992px){
+            .left1{
+                display: block;
+            }
+            .left{
+                display: none;
+            }
+            .right{
+                margin-left: 0px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -268,18 +368,6 @@ button{
         <div class="p"><p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p></div>
         <div class="BasicPro">
             <div class="Basic">
-                <!-- <ul>
-                    
-                        <li>Floorplanning</li>
-                        <li>10 hours support</li>
-                        <li>Photography</li>
-                        <li>20% furniture discount</li>
-                        <li>Good deals</li>
-                        <li><p><h2>$ 199</h2></p>
-                           <p> per room</p></li>
-                        <button>Sign Up</button>
-                    
-                </ul> -->
                 <table>
                     <th>Basic</th>
                     <tr><td>Floorplanning</td></tr>
@@ -297,10 +385,10 @@ button{
             </div>
 
            
-                <div class="Basic">
+                <div class="pro">
                    
                     <table>
-                        <th>Pro</th>
+                        <th class="pro">Pro</th>
                         <tr><td>Floorplanning</td></tr>
                         <tr><td>50 hours support</td></tr>
                         <tr><td>Photography</td></tr>
@@ -310,13 +398,35 @@ button{
                             <h2>$ 249</h2>
                             per room
                         </td></tr>
-                        <tr><td><button>Sign Up</button></td></tr>
+                        <tr><td><button class="sign">Sign Up</button></td></tr>
                         
                     </table>
                 </div>
 
 
         </div>
+    
+    <div class="contact">
+        <div class="show"><h1>Contact.</h1></div>
+        <div class="line"></div>
+        <div class="para">
+            <br>
+            <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+        </div>
+        <div class="form">
+            <form action="">
+                <label for="username">Name</label><br>
+                <input type="text" name="username"><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" ><br><br>
+                <label for="messages">Messages</label><br>
+                <input type="text"><br><br>
+                <input type="submit" value="Send Messages" class="Button">
+            </form>
+        </div>
+    </div>
+    <div class="space">Made by Avisha Maheshwari</div>
+
 </div>
 </body>
 </html>
